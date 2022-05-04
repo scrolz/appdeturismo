@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Posto Brasil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-slides>
+        <ion-slide>
+          <ion-img src="https://i.imgur.com/ZwGgT1H.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="https://i.imgur.com/o7l1Hd3.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="https://i.imgur.com/nKAANrc.jpg"></ion-img>
+        </ion-slide>
+      </ion-slides>
+    </ion-card-header>
+
+    <ion-card-content>
+      Qualidade é a nossa marca!
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="location-outline" slot="start"></ion-icon>
+      <ion-label>Endereço</ion-label>
+      <ion-button fill="outline" href="https://goo.gl/maps/SDX3Qt2kJQY9iTjG9" target="_blank">Ver no mapa</ion-button>
+    </ion-item>
+    <ion-card-content>
+      Rodovia Br 116, Km 25, s/n - Nossa Sra. Aparecida, Salgueiro - PE, 56000-000
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="time-outline"></ion-icon>
+      <ion-label>Horário de Funcionamento</ion-label>
+    </ion-item>
+    <ion-card-content>
+      <h2>24h</h2>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

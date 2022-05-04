@@ -1,17 +1,93 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Parques
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://www.salgueiro.pe.gov.br/guia-turistico/catedral-santo-antonio.jpg" alt="">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Praça da Matriz</h2>
+          </ion-text>
+          <p>Igreja Matriz</p>
+        </ion-label>
+        <ion-note slot="end">Praça/Igreja</ion-note>
+      </ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+      <ion-item-options side="end">
+        <ion-item-option (click)="openSite('https://www.salgueiro.pe.gov.br/municipio-guia-turistico-igrejas.html')" color="light">
+          <ion-icon slot="icon-only" name="arrow-redo-outline"></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option (click)="likethis()" color="danger">
+          <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+        </ion-item-option>
+
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://i.imgur.com/c9477QN.jpg" alt="">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Praça Elias</h2>
+          </ion-text>
+          <p>Nossa Sra. das Graças</p>
+        </ion-label>
+        <ion-note slot="end">Praça</ion-note>
+      </ion-item>
+      
+      <ion-item-options side="end">
+        <ion-item-option (click)="openSite('https://goo.gl/maps/yYkdwsb1gjuwugnp9')" color="light">
+          <ion-icon slot="icon-only" name="arrow-redo-outline"></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option (click)="likethis()" color="danger">
+          <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+        </ion-item-option>
+
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="http://4.bp.blogspot.com/-dg1MvFTSz9Y/Tt1TCtqRRdI/AAAAAAAAACw/HTW0nzf7WUA/s1600/Academia+das+cidades+frente.jpg" alt="">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text color="primary">
+            <h2>Praça Carlos Pena Filho</h2>
+          </ion-text>
+          <p>Prado</p>
+        </ion-label>
+        <ion-note slot="end">Praça</ion-note>
+      </ion-item>
+      
+      <ion-item-options side="end">
+        <ion-item-option (click)="openSite('https://goo.gl/maps/VBrnyoam4CEFxpMi8')" color="light">
+          <ion-icon slot="icon-only" name="arrow-redo-outline"></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option (click)="likethis()" color="danger">
+          <ion-icon slot="icon-only" name="heart-outline"></ion-icon>
+        </ion-item-option>
+
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
 </ion-content>
